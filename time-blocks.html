@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><meta charset="UTF-8"><title>placeholder</title></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>时间盒子</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-<p>Uploading full app next.</p>
-</body></html>
+  <div class="live" id="live">正在启动…</div>
+  <div id="alertBar" onclick="this.style.display='none'"></div>
+  <header class="top">
+    <div class="brand"><div class="logo">盒</div><div><h1>时间盒子</h1><div class="sub">自己定钟点，积木和待办往里装</div></div></div>
+    <div class="pills">
+      <div class="pill"><b id="sFill">0</b><span>已装</span></div>
+      <div class="pill"><b id="sDone">0</b><span>盖上</span></div>
+      <button class="btn" id="openSet" type="button">设置</button>
+    </div>
+  </header>
+  <p>请下载并使用仓库里的完整文件。此页面需要 styles.css 与 app.js。</p>
+  <script src="app.js"></script>
+</body>
+</html>
